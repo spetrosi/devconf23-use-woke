@@ -17,9 +17,11 @@ _class:
 }
 </style>
 
-# [Using woke for Inclusive Language Scans](https://spetrosi.github.io/use_woke_devconf2023/y)
+# Using woke for Inclusive Language Scans
 
 [Sergei Petrosian](mailto:spetrosi@redhat.com)
+
+<!-- https://spetrosi.github.io/use_woke_devconf2023 -->
 
 <!-- Diversity, Equity, and Inclusion (DEI) is a focus of many organizations today.
 It is important for all users and developers to feel comfortable using and contributing to open source projects.
