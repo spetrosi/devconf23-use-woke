@@ -17,24 +17,25 @@ _class:
 }
 </style>
 
-# [Using woke in Github for Conscious Language Scans](https://spetrosi.github.io/use_woke_devconf2023/#1)
+# [Using woke for Conscious Language Scans](https://spetrosi.github.io/use_woke_devconf2023/y)
 
 [Sergei Petrosian](mailto:spetrosi@redhat.com)
 
+<!-- Diversity, Equity, and Inclusion (DEI) is a focus of many organizations today.
+It is important for all users and developers to feel comfortable using and contributing to open source projects.
+Part of this is Conscious Language, using words and expressions that are inclusive rather than exclusive. -->
+
 ## Presentation Outline
 
-1. What is Conscious Language?
-2. woke tool
-3. woke-action GitHub Action
-4. woke Caveats
-5. Workarounds to the Caveats
+1. Why it is Conscious Language initiative important?
+2. `woke` tool
+3. `woke-action` GitHub Action
+4. `woke` caveats
+5. Workarounds to the caveats
 6. Q&A
 
-<!-- Diversity, Equity, and Inclusion (DEI) is an important focus of many organizations today.
-It is important for all users and developers to feel comfortable using and contributing to open source projects.
-Part of this is Conscious Language, using words and expressions that are inclusive rather than exclusive.
-The Linux System Roles project has recently begun using a tool called "woke" as part of our github action checking.
-Learn about the "woke" tool, how we are using it in Linux System roles github action checking, the hurdles we faced converting Linux System Roles to have more inclusive language, and ways you can help the "woke" project. -->
+<!-- The Linux System Roles project has recently begun using a tool called "woke" as part of our github code checking.
+During this presentation you will learn about the "woke" tool, how we are using it in Linux System roles github action checking, the hurdles we faced converting Linux System Roles to have more inclusive language, and ways you can help the "woke" project.  -->
 
 ## Why it is important?
 
@@ -48,15 +49,19 @@ Not only does this eliminate the hurt caused by those connotations, it also impr
 1. To be inclusive
 2. Improve understanding for people who are reading in a second language, where those idioms may be confusing
 
-## [woke](https://github.com/get-woke/woke)
+## woke
 
 A tool that detects non-inclusive language in your source code.
+![bg right:40% contain](img/woke_main.png)
+Features:
+1. Searches for terms and their variations
+2. Suggests alternatives to use
+3. Different terms might have different serverity levels
+4. Customizable configuration file
 
-![](img/woke_main.png)
+## woke-action
 
-## [woke-action](https://github.com/get-woke/woke-action)
-
-Woke GitHub Actions allow you to execute woke command within GitHub Actions
+`woke-action` allows you to execute woke command within GitHub Actions
 
 ```yaml
 name: woke
@@ -83,12 +88,17 @@ jobs:
 
 ## woke Caveats
 
-- Add an option "--count-only-error-for-failure" [#252](https://github.com/get-woke/woke/pull/252)
-- Use custom config https://raw.githubusercontent.com/linux-system-roles/tox-lsr/main/src/tox_lsr/config_files/woke.yml
+
+- woke fails on errors of all severety levels
+
+  A PR that we opened for woke:
+  Add an option "--count-only-error-for-failure" [#252](https://github.com/get-woke/woke/pull/252)
+
+- Lack of activity from the developer
 
 ## Workaround
 
-Create a fork at [.github/actions/custom-woke-action](https://github.com/linux-system-roles/mssql/tree/main/.github/actions/custom-woke-action)
+We created a "clone" at [.github/actions/custom-woke-action](https://github.com/linux-system-roles/mssql/tree/main/.github/actions/custom-woke-action)
 
 ```yaml
 name: Check for non-inclusive language
@@ -118,3 +128,9 @@ _class:
  - invert
 -->
 ### Q&A
+
+## References
+
+[woke](https://github.com/get-woke/woke)
+[woke-action](https://github.com/get-woke/woke-action)
+[.github/actions/custom-woke-action](https://github.com/linux-system-roles/mssql/tree/main/.github/actions/custom-woke-action)
