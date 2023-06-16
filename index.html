@@ -16,15 +16,15 @@
 <h2>Presentation Outline</h2>
 <ol>
 <li>Why it is Inclusive Language Initiative important?</li>
-<li><code>woke</code> tool</li>
+<li><code>woke</code> tool features</li>
 <li><code>woke-action</code> GitHub Action</li>
-<li><code>woke</code> caveats</li>
-<li>How linux-system-roles works arounds the caveats</li>
+<li><code>woke</code> Caveats</li>
+<li>How linux-system-roles works around the caveats</li>
 <li>Q&amp;A</li>
 </ol>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-class="invert" data-paginate="true" data-theme="gaia" data-heading-divider="2" class="invert" data-marpit-pagination="3" data-marpit-pagination-total="10" style="--class:invert;--paginate:true;--theme:gaia;--heading-divider:2;">
-<h2>Why it is important?</h2>
+<h2>Why is it Important?</h2>
 
 <ol>
 <li>
@@ -36,20 +36,20 @@
 </ol>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-class="invert" data-paginate="true" data-theme="gaia" data-heading-divider="2" class="invert" data-marpit-pagination="4" data-marpit-pagination-total="10" style="--class:invert;--paginate:true;--theme:gaia;--heading-divider:2;--marpit-advanced-background-split:40%;" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;img/woke_main.png&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="60%" height="720"><section id="4" data-class="invert" data-paginate="true" data-theme="gaia" data-heading-divider="2" class="invert" data-marpit-pagination="4" data-marpit-pagination-total="10" style="--class:invert;--paginate:true;--theme:gaia;--heading-divider:2;--marpit-advanced-background-split:40%;" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
-<h2>woke</h2>
+<h2>woke Features</h2>
 <p>A tool that detects non-inclusive language in your source code.<br />
 <br />
 Features:</p>
 <ol>
 <li>Searches for non-inclusive terms and their variations</li>
 <li>Suggests alternatives</li>
-<li>Different terms might have different serverity levels</li>
+<li>Different terms might have different severity levels</li>
 <li>Customizable configuration file</li>
 </ol>
 </section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section class="invert" style="" data-marpit-advanced-background="pseudo" data-marpit-pagination="4" data-marpit-pagination-total="10"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-class="invert" data-paginate="true" data-theme="gaia" data-heading-divider="2" class="invert" data-marpit-pagination="5" data-marpit-pagination-total="10" style="--class:invert;--paginate:true;--theme:gaia;--heading-divider:2;">
-<h2>woke-action</h2>
-<p><code>woke-action</code> - GitHub action that allows you to execute woke command within GitHub Actions</p>
+<h2>woke-action GitHub Action</h2>
+<p><code>woke-action</code> - GitHub action that allows you to execute woke within GitHub Actions</p>
 <pre><code class="language-yaml"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-attr">name:</span> <span class="hljs-string">woke</span>
 <span class="hljs-attr">on:</span>
   <span class="hljs-bullet">-</span> <span class="hljs-string">pull_request</span>
@@ -76,7 +76,7 @@ Features:</p>
 <h2>woke Caveats</h2>
 <ul>
 <li>
-<p>woke fails on errors of all severety levels</p>
+<p>woke fails on errors of all severity levels</p>
 <p>A PR that we opened for woke:<br />
 Add an option &quot;--count-only-error-for-failure&quot; <a href="https://github.com/get-woke/woke/pull/252">#252</a></p>
 </li>
@@ -86,7 +86,7 @@ Add an option &quot;--count-only-error-for-failure&quot; <a href="https://github
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-class="invert" data-paginate="true" data-theme="gaia" data-heading-divider="2" class="invert" data-marpit-pagination="8" data-marpit-pagination-total="10" style="--class:invert;--paginate:true;--theme:gaia;--heading-divider:2;">
-<h2>Workaround</h2>
+<h2>How linux-system-roles Works Around the Caveats</h2>
 <p>We created a &quot;clone&quot; at <a href="https://github.com/linux-system-roles/mssql/tree/main/.github/actions/custom-woke-action">.github/actions/custom-woke-action</a></p>
 <pre><code class="language-yaml"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-attr">name:</span> <span class="hljs-string">Check</span> <span class="hljs-string">for</span> <span class="hljs-string">non-inclusive</span> <span class="hljs-string">language</span>
 <span class="hljs-attr">on:</span>  <span class="hljs-comment"># yamllint disable-line rule:truthy</span>
@@ -124,7 +124,7 @@ Add an option &quot;--count-only-error-for-failure&quot; <a href="https://github
 <script>!function(){"use strict";const t="marpitSVGPolyfill:setZoomFactor,",e=Symbol();let r,o;function n(n){const i="object"==typeof n&&n.target||document,a="object"==typeof n?n.zoom:n;window[e]||(Object.defineProperty(window,e,{configurable:!0,value:!0}),window.addEventListener("message",(({data:e,origin:r})=>{if(r===window.origin)try{if(e&&"string"==typeof e&&e.startsWith(t)){const[,t]=e.split(","),r=Number.parseFloat(t);Number.isNaN(r)||(o=r)}}catch(t){console.error(t)}})));let l=!1;Array.from(i.querySelectorAll("svg[data-marpit-svg]"),(t=>{var e,n,i,s;t.style.transform||(t.style.transform="translateZ(0)");const c=a||o||t.currentScale||1;r!==c&&(r=c,l=c);const d=t.getBoundingClientRect(),{length:u}=t.children;for(let r=0;r<u;r+=1){const o=t.children[r],a=o.getScreenCTM();if(a){const t=null!==(n=null===(e=o.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==n?n:0,r=null!==(s=null===(i=o.y)||void 0===i?void 0:i.baseVal.value)&&void 0!==s?s:0,l=o.firstElementChild,{style:u}=l;u.transformOrigin||(u.transformOrigin=`${-t}px ${-r}px`),u.transform=`scale(${c}) matrix(${a.a}, ${a.b}, ${a.c}, ${a.d}, ${a.e-d.left}, ${a.f-d.top}) translateZ(0.0001px)`}}})),!1!==l&&Array.from(i.querySelectorAll("iframe"),(({contentWindow:e})=>{null==e||e.postMessage(`${t}${l}`,"null"===window.origin?"*":window.origin)}))}r=1,o=void 0;const i=(t,e,r)=>{if(t.getAttribute(e)!==r)return t.setAttribute(e,r),!0};function a({once:t=!1,target:e=document}={}){const r="Apple Computer, Inc."===navigator.vendor?[n]:[];let o=!t;const a=()=>{for(const t of r)t({target:e});!function(t=document){Array.from(t.querySelectorAll('svg[data-marp-fitting="svg"]'),(t=>{var e;const r=t.firstChild,o=r.firstChild,{scrollWidth:n,scrollHeight:a}=o;let l,s=1;if(t.hasAttribute("data-marp-fitting-code")&&(l=null===(e=t.parentElement)||void 0===e?void 0:e.parentElement),t.hasAttribute("data-marp-fitting-math")&&(l=t.parentElement),l){const t=getComputedStyle(l),e=Math.ceil(l.clientWidth-parseFloat(t.paddingLeft||"0")-parseFloat(t.paddingRight||"0"));e&&(s=e)}const c=Math.max(n,s),d=Math.max(a,1),u=`0 0 ${c} ${d}`;i(r,"width",`${c}`),i(r,"height",`${d}`),i(t,"preserveAspectRatio",getComputedStyle(t).getPropertyValue("--preserve-aspect-ratio")||"xMinYMin meet"),i(t,"viewBox",u)&&t.classList.toggle("__reflow__")}))}(e),o&&window.requestAnimationFrame(a)};return a(),()=>{o=!1}}const l=Symbol(),s=document.currentScript;((t=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(t[l])return t[l];const e=a({target:t}),r=()=>{e(),delete t[l]};Object.defineProperty(t,l,{configurable:!0,value:r})})(s?s.getRootNode():document)}();
 </script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="0" tabindex="0"><p>https://spetrosi.github.io/use_woke_devconf2023</p><p>Diversity, Equity, and Inclusion (DEI) is a focus of many organizations today.
 It is important for all users and developers to feel comfortable using and contributing to open source projects.
-Part of this is Inclusive Language, using words and expressions that are inclusive rather than exclusive.</p></div><div class="bespoke-marp-note" data-index="1" tabindex="0"><p>The Linux System Roles project has recently begun using a tool called &quot;woke&quot; as part of our github code checking.
+Part of this is Conscious Language, using words and expressions that are inclusive rather than exclusive.</p></div><div class="bespoke-marp-note" data-index="1" tabindex="0"><p>The Linux System Roles project has recently begun using a tool called &quot;woke&quot; as part of our github code checking.
 During this presentation you will learn about the &quot;woke&quot; tool, how we are using it in Linux System roles github action checking, the hurdles we faced converting Linux System Roles to have more inclusive language, and ways you can help the &quot;woke&quot; project.</p></div><div class="bespoke-marp-note" data-index="2" tabindex="0"><p>The software industry sometimes uses certain words that may carry a great deal of emotional and historical baggage.
 If software is truly meant to be inclusive and a place where anyone can participate, it must be welcoming to all.
 If words or phrases convey secondary unintended meanings to our audience, we are potentially limiting participation in our projects.
