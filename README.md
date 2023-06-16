@@ -134,6 +134,7 @@ _class:
 
 ## References
 
+[Linux System Roles GitHub](https://github.com/linux-system-roles/)
 [Inclusive Naming Initiative FAQ](https://inclusivenaming.org/faqs/)
 [woke](https://github.com/get-woke/woke)
 [woke-action](https://github.com/get-woke/woke-action)
