@@ -32,7 +32,7 @@ Part of this is Conscious Language, using words and expressions that are inclusi
 1. Why it is Inclusive Language Initiative important?
 2. `woke` tool features
 3. `woke-action` GitHub Action
-4. `woke` Caveats
+4. `woke` caveats
 5. How linux-system-roles works around the caveats
 6. Q&A
 
