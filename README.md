@@ -17,7 +17,7 @@ _class:
 }
 </style>
 
-# Using woke for Inclusive Language Scans
+# Using woke for Conscious Language Scans
 
 [Sergei Petrosian](mailto:spetrosi@redhat.com)
 
